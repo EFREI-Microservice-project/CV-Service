@@ -11,19 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Orden14/ReactCourseProject.git"
+    "url": "git+https://github.com/EFREI-Microservice-project/CV-Service.git"
   },
   "keywords": [
     "javascript",
     "api",
     "mongodb"
   ],
-  "author": "Orden14",
+  "author": "Niceley",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EFREi-Renforcement-Js-groupe-TDA/MyCvApi/issues"
+    "url": "https://github.com/EFREI-Microservice-project/CV-Service/issues"
   },
-  "homepage": "https://github.com/EFREi-Renforcement-Js-groupe-TDA/MyCvApi#readme",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",

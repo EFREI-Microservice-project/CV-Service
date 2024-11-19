@@ -9,8 +9,8 @@ const apiRouter = require("./routes");
 const cors = require("cors");
 
 const corsOptions = {
-    origin: "http://localhost:8001",
-    optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+    origin: true,
+    optionsSuccessStatus: 200,
 };
 
 app.use(cors(corsOptions));
@@ -40,6 +40,7 @@ mongoose
     })
     .catch((error) => {
         console.log(`Database connection error ${error}`);
+        console.log(`Failed to connect to ${process.env.DATABASE_URL}`);
     });
 
 app.use("/api/", apiRouter);
