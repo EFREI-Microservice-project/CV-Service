@@ -1,5 +1,4 @@
 const CvModel = require("../models/Cv");
-const ReviewModel = require("../models/Review");
 const { verifyCv } = require("../validator/CvValidator");
 const axios = require("axios");
 
@@ -57,7 +56,6 @@ const CvController = {
                 return res.status(403).json({ message: "Vous n'êtes pas autorisé à supprimer ce CV." });
             }
 
-            await ReviewModel.deleteMany({ cv: cv._id });
             await cv.deleteOne();
 
             res.status(200).json({ message: "CV supprimé avec succès." });

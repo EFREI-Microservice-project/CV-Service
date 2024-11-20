@@ -24,6 +24,7 @@
     "url": "https://github.com/EFREI-Microservice-project/CV-Service/issues"
   },
   "dependencies": {
+    "axios": "^1.7.7",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
